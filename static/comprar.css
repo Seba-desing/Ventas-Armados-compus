@@ -1,0 +1,189 @@
+*
+{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.@font-face {
+  font-family: 'Roboto', sans-serif;
+  src: url(<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">);
+}
+
+.contenedor
+{
+  display: grid;
+  grid-template-columns: repeat(12,1fr);
+  text-decoration: none;
+}
+
+.cabecera
+{
+  background-color: #2C2B2B;
+  height: 50px;
+  grid-column: 1/13;
+  color: white;
+  text-decoration: none;
+  font-weight: 100;
+}
+
+.cabecera a
+{
+
+  color: #EAEAEA;
+  text-align: center;
+  padding-left: 140px;
+  float: left;
+  padding-top: 10px;
+  text-decoration: none;
+}
+
+.logo
+{
+  float: left;
+  padding-left: 350px;
+  padding-top: 5px;
+}
+
+.lupa
+{
+  float: right;
+  padding-right: 20px;
+  padding-top: 7px;
+}
+
+.bolsa
+{
+  float: right;
+  padding-right: 350px;
+  padding-top: 7px;
+}
+
+.titulo{
+  grid-column: 1/13;
+  text-align: center;
+  margin: 20px;
+}
+.formulario{
+  border-style: solid;
+  border-color: white;
+  border-width: thick;
+  grid-column: 1/13;
+}
+.formu{
+  display: grid;
+  grid-template-columns: repeat(12,1fr);
+}
+.formu img{
+  width: 500px;
+}
+.noot1{
+  border-style: solid;
+  border-color: white;
+  border-width:thick;
+  grid-column: 2/6;
+
+}
+.no1{
+  border-style: solid;
+  border-color: white;
+  border-width: thick;
+  grid-column: 6/12;
+  background-color: #f7f7f7;
+  padding-left: 10px;
+}
+.no{
+  text-align: center;
+}
+.formu2{
+  display: grid;
+  grid-template-columns: repeat(12,1fr);
+}
+.formu2 img{
+  width: 500px;
+}
+.noot2{
+  border-style: solid;
+  border-color:white;
+  border-width: thick;
+  grid-column: 2/6;
+}
+.no2{
+  border-style: solid;
+  border-color: white;
+  border-width: thick;
+  grid-column: 6/12;
+  background-color: #f7f7f7;
+  padding-left: 10px;
+}
+.ni{
+  text-align: center;
+}
+
+.pie
+{
+
+  height: 130px;
+  background-color: #e2e1e1;
+  grid-column: 1/13;
+}
+
+.pietx
+{
+  padding-left: 0px;
+  padding-top: 10px;
+  text-align: center;
+  color:#8F8D8D ;
+  font-size: 12px;
+}
+
+.img1
+{
+  width: 100%;
+  height: auto;
+}
+
+@media(max-width:720px)
+{
+  .cabecera a
+  {
+
+    color: #EAEAEA;
+    text-align: center;
+    padding-left: 35px;
+    float: left;
+    padding-top: 10px;
+    text-decoration: none;
+  }
+
+  .logo
+  {
+    float: left;
+    padding-left: 150px;
+    padding-top: 5px;
+  }
+
+  .lupa
+  {
+    float: right;
+    padding-right: 10px;
+    padding-top: 7px;
+  }
+
+  .bolsa
+  {
+    float: right;
+    padding-right: 150px;
+    padding-top: 7px;
+  }
+
+  .img1
+  {
+    width: 50%;
+    height: auto;
+    max-width: 250px;
+    padding-top:60px;
+  }
+
+
+}

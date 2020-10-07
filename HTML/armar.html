@@ -1,0 +1,195 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="{% static '/aramar.css' %}">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <title>MiPC/armar</title>
+  </head>
+  <body>
+    <div class="contenedor">
+      <header class="cabecera">
+        <img class="logo" src="{% static '/logo.png' %}"alt="">
+        <a href="/compu">inicio</a>
+        <a href="#">explorar</a>
+        <a href="#">soporte</a>
+
+        <img class="bolsa" src="{% static '/bolsa.png' %}" alt="">
+        <img class="lupa" src="{% static '/lupa.png' %}" alt="">
+      </header>
+      <div class="titulo">
+        <h1  class="titulos">Arma tu computador ideal</h1>
+      </div>
+      <div class="formulario">
+        <form  action="index.html" method="post">
+          <div class="procesador">
+            <div class="tii">
+              <h2>Procesador</h2>
+            </div>
+            <br>
+            <br>
+            <label for="marca">Marca :</label>
+            <select  id="marca">
+              <option value="intel">INTEL</option>
+              <option value="amd">AMD</option>
+            </select>
+            <br>
+            <br>
+            <label for="generacion">Generacion</label>
+            <select  id="generacion" name="generacion">
+              <option value="primera">Primera</option>
+              <option value="segunda">Segunda</option>
+              <option value="tercera">Tercera</option>
+              <option value="cuarta">Cuarta</option>
+              <option value="quinta">Quinta</option>
+              <option value="secta">Secta</option>
+              <option value="septima">Septima</option>
+              <option value="octava">Octava</option>
+              <option value="novena">Novena</option>
+              <option value="decima" selected>Decima</option>
+            </select>
+            <br>
+            <br>
+            <img class="pro"src="pro.jpg" alt="">
+          </div>
+          <div class="placamadre">
+            <h2>Placas madre</h2>
+            <label for="placa">Modelos</label>
+            <br>
+            <input id="placa"type="radio" name="placa" value="placa1">Gigabyte Z490 AORUS MASTER
+            <img class="placa1"src="{% static '/placa1.png' %}" alt="">
+            <br>
+            <input id="placa"type="radio" name="placa" value="placa2">Gigabyte Z490I AORUS ULTRA
+            <img class="placa2"src="{% static '/placa2.png' %}"alt="">
+            <br>
+            <input id="placa"type="radio" name="placa" value="placa3">Gigabyte Z490 AORUS ULTRA
+            <img class="placa3"src="{% static '/placa3.png' %}" alt="">
+            <br>
+            <input id="placa"type="radio" name="placa" value="placa4">ASUS ROG MAXIMUS XII FORMULA
+            <img class="placa4"src="{% static '/paca4.png' %}" alt="">
+          </div>
+          <div class="ram">
+            <h2>Tarjetas ram</h2>
+            <label for="ddr4">Modelos ddr 4</label>
+            <br>
+            <input id="ddr4"type="radio" name="ddr4" value="ram1">HP 838089-B21
+            <img src="{% static '/ram1.png' %}" alt="">
+            <br>
+            <input id="ddr4"type="radio" name="ddr4" value="ram2">Corsair Vengeance
+            <img src="{% static '/ram2.png' %}" alt="">
+            <br>
+            <input id="ddr4"type="radio" name="ddr4" value="ram3">Dell A8797578
+            <img src="{% static '/ram3.png' %}" alt="">
+            <br>
+            <input id="ddr4"type="radio" name="ddr4" value="ram4">HP P00924-B21
+            <img src="{% static '/ram4.png' %}" alt="">
+          </div>
+          <div class="gabinetes">
+            <h2>Gabinetes</h2>
+            <br>
+            <label for="modelo">Modelos de gabinete</label>
+            <br>
+            <input id="modelo"type="radio" name="modelo" value="modelo1">In Win 905
+            <img src="{% static '/modelo1.png' %}" alt="">
+            <br>
+            <input id="modelo"type="radio" name="modelo" value="modelo2">Thermaltake Core P5
+            <img src="{% static '/modelo2.png' %}" alt="">
+            <br>
+            <input id="modelo"type="radio" name="modelo" value="modelo3">MSI MPG SEKIRA
+            <img src="{% static '/modelo3.png' %}" alt="">
+            <br>
+            <input id="modelo"type="radio" name="modelo" value="modelo4">In Win 101C - White
+            <img src="{% static '/modelo4.png' %}" alt="">
+          </div>
+          <div class="disco">
+            <h2>Discos Duros</h2>
+            <br>
+            <label for="duro">Modelos</label>
+            <br>
+            <input id="duro"type="radio" name="duro" value="duro1">Toshiba N300 NAS 12 TB
+            <img src="{% static '/duro1.png' %}" alt="">
+            <br>
+            <input id="duro"type="radio" name="duro" value="duro2">Toshiba X300 Performance 14 TB
+            <img src="{% static '/duro2.png' %}" alt="">
+            <br>
+            <input id="duro"type="radio" name="duro" value="duro3">Dell 8 TB (400-ATKV)
+            <img src="{% static '/duro3.png' %}" alt="">
+            <br>
+            <input id="duro"type="radio" name="duro" value="duro4">Seagate IronWolf NAS 16 TB
+            <img src="{% static '/duro4.png' %}" alt="">
+          </div>
+          <div class="tarjeta">
+            <h2>Tarjetas graficas</h2>
+            <br>
+            <label for="grafica">Modelo</label>
+            <br>
+            <input id="grafica"type="radio" name="grafica" value="grafica1">MSI GeForce RTX 2080
+            <img src="{% static '/grafica1.png' %}" alt="">
+            <br>
+            <input id="grafica"type="radio" name="grafica" value="grafica2">NVIDIA GeForce Titan RTX
+            <img src="{% static '/grafica2.png' %}" alt="">
+            <br>
+            <input id="grafica"type="radio" name="grafica" value="grafica3">EVGA GeForce RTX 2080
+            <img src="{% static '/grafica3.png' %}"alt="">
+            <br>
+            <input id="grafica"type="radio" name="grafica" value="grafica4">ASUS ROG-STRIX-RTX2070S-A8G-GAMING
+            <img src="{% static '/grafica4.png' %}" alt="">
+          </div>
+          <div class="fuente">
+            <h2>Fuente de poder</h2>
+            <br>
+            <label for="poder">Modelo</label>
+            <br>
+            <input id="poder"type="radio" name="poder" value="poder1">Thermaltake Toughpower 1200W Gold
+            <img src="{% static '/poder1.png' %}" alt="">
+            <br>
+            <input id="poder"type="radio" name="poder" value="poder2">Silverstone SST-SX700-G (700 W)
+            <img src="{% static '/poder2.png' %}" alt="">
+            <br>
+            <input id="poder"type="radio" name="poder" value="poder3">Seasonic FOCUS Plus 850 Gold
+            <img src="{% static '/poder3.png' %}" alt="">
+            <br>
+            <input id="poder"type="radio" name="poder" value="poder4">Segotep KL-850W (850 W)
+            <img src="{% static '/poder4.png' %}" alt="">
+          </div>
+          <div class="monitor">
+            <h2>Monitores</h2>
+            <br>
+            <label for="mo">Modelos</label>
+            <br>
+            <input id="mo"type="radio" name="mo" value="mo1">Viewsonic XG2560
+            <br>
+            <img src="{% static '/mo1.png' %}" alt="">
+            <br>
+            <input id="mo"type="radio" name="mo" value="mo2">Apple Pro Display XDR Nano
+            <img src="{% static '/mo2.png' %}" alt="">
+            <br>
+            <input id="mo"type="radio" name="mo" value="mo3">Dell UP2718Q (210-AMVP)
+            <img src="{% static '/mo3.png' %}" alt="">
+            <br>
+            <input id="mo"type="radio" name="mo" value="mo4">Dell UP3017 (210-AJGT)
+            <img src="{% static '/mo4.png' %}"alt="">
+          </div>
+          <div class="compra"><br>
+            <a href="/compu3"><button type="button" class="btn btn-primary">comprar</button></a>
+
+          </div>
+        </form>
+
+      </div>
+      <div class="pie">
+        <p class="pietx">Mesa Central: 99 9 9999 9999</p>
+        <p class="pietx">Dirección: Av. Lorem ipsum #999</p>
+        <p class="pietx">Todos los derechos reservados</p>
+      </div>
+
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+  </body>
+</html>

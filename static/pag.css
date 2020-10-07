@@ -1,0 +1,242 @@
+*
+{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.@font-face {
+  font-family: 'Roboto', sans-serif;
+  src: url(<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">);
+}
+
+.contenedor
+{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  text-decoration: none;
+}
+
+.cabecera
+{
+  background-color: #2C2B2B;
+  height: 50px;
+  grid-column: 1/13;
+  color: white;
+text-decoration: none;
+  font-weight: 100;
+}
+
+.cabecera a
+{
+
+  color: #EAEAEA;
+  text-align: center;
+  padding-left: 140px;
+  float: left;
+  padding-top: 10px;
+  text-decoration: none;
+}
+
+.logo
+{
+  float: left;
+  padding-left: 350px;
+  padding-top: 5px;
+}
+
+.lupa
+{
+  float: right;
+  padding-right: 20px;
+  padding-top: 7px;
+}
+
+.bolsa
+{
+  float: right;
+  padding-right: 350px;
+  padding-top: 7px;
+}
+
+.contenedor2
+{
+  display: grid;
+  text-decoration: none;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.armar
+{
+  font-weight: 300;
+  height: 300px;
+  grid-column: 1/7;
+  padding-top: 20px;
+}
+
+.armartx
+{
+  float:right;
+  padding-right: 100px;
+  text-align: justify;
+}
+
+
+.comprar
+{
+  font-weight: 300;
+  height: 300px;
+  padding-top: 20px;
+  grid-column: 7/13;
+}
+
+.pie
+{
+
+  height: 130px;
+  background-color: #e2e1e1;
+  grid-column: 1/13;
+}
+
+.pietx
+{
+  padding-left: 0px;
+  padding-top: 10px;
+  text-align: center;
+  color:#8F8D8D ;
+  font-size: 12px;
+}
+
+.irarmar
+{
+  padding-top: 178px;
+  padding-left: 340px;
+}
+
+.ircomprar
+{
+  padding-top: 40px;
+  padding-left: 180px;
+}
+
+.titulos
+{
+  padding-top: 50px;
+  padding-left: 100px;
+  grid-column: 1/13;
+}
+
+@media(max-width:720px)
+{
+  .cabecera a
+  {
+
+    color: #EAEAEA;
+    text-align: center;
+    padding-left: 35px;
+    float: left;
+    padding-top: 10px;
+    text-decoration: none;
+  }
+
+  .logo
+  {
+    float: left;
+    padding-left: 150px;
+    padding-top: 5px;
+  }
+
+  .lupa
+  {
+    float:left;
+    padding-left: 40px;
+    padding-top: 7px;
+  }
+
+  .bolsa
+  {
+    float: right;
+    padding-right: 120px;
+    padding-top: 7px;
+  }
+
+  .contenedor2
+  {
+    display: grid;
+    text-decoration: none;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  }
+
+  .armar
+  {
+    font-weight: 300;
+    height: 440px;
+    grid-column: 2/7;
+    padding-top: 20px;
+    padding-right: 10px;
+  }
+
+  .armartx
+  {
+    float:right;
+    padding-right: 10px;
+    text-align: right;
+  }
+
+
+  .comprar
+  {
+    font-weight: 300;
+    height: 440px;
+    padding-top: 20px;
+    grid-column: 7/12;
+    padding-left: 10px;
+  }
+
+  .pie
+  {
+
+    height: 130px;
+    background-color: #e2e1e1;
+    grid-column: 1/13;
+  }
+
+  .pietx
+  {
+    padding-left: 0px;
+    padding-top: 10px;
+    text-align: center;
+    color:#8F8D8D ;
+    font-size: 12px;
+  }
+
+  .irarmar
+  {
+    padding-top: 322px;
+    padding-left: 90px;
+  }
+
+  .ircomprar
+  {
+    padding-top: 20px;
+    padding-left: 40px;
+  }
+
+  .titulos
+  {
+    padding-top: 50px;
+    padding-left: 100px;
+    grid-column: 1/13;
+  }
+
+  .contenedorcarrusel
+  {
+    max-width: 620px;
+    padding-left: 0px;
+    margin: 0px;
+  }
+  #carouselExampleFade
+  {
+    margin: 0px;
+  }
+}

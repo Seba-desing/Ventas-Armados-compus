@@ -1,0 +1,241 @@
+*
+{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.@font-face {
+  font-family: 'Roboto', sans-serif;
+  src: url(<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">);
+}
+
+.contenedor
+{
+  display: grid;
+  grid-template-columns: repeat(12,1fr);
+  text-decoration: none;
+}
+
+.cabecera
+{
+  background-color: #2C2B2B;
+  height: 50px;
+  grid-column: 1/13;
+  color: white;
+  text-decoration: none;
+  font-weight: 100;
+}
+
+.cabecera a
+{
+
+  color: #EAEAEA;
+  text-align: center;
+  padding-left: 140px;
+  float: left;
+  padding-top: 10px;
+  text-decoration: none;
+}
+
+.logo
+{
+  float: left;
+  padding-left: 350px;
+  padding-top: 5px;
+}
+
+.lupa
+{
+  float: right;
+  padding-right: 20px;
+  padding-top: 7px;
+}
+
+.bolsa
+{
+  float: right;
+  padding-right: 350px;
+  padding-top: 7px;
+}
+.titulo{
+  grid-column: 1/13;
+  text-align: center;
+  padding: 20px;
+}
+.formulario{
+  grid-column: 1/13;
+  text-align: center;
+  padding-top: 30px;
+}
+.formulario form{
+  display: grid;
+  grid-template-columns: repeat(12,1fr);
+
+}
+.procesador{
+  grid-column: 1/4;
+}
+.tii{
+  text-align: center;
+}
+.procesador label{
+  font-size: 20px;
+}
+.pro{
+  width: 200px;
+}
+.placamadre{
+  grid-column: 4/7;
+  text-align: center;
+}
+.placa1{
+  width: 200px;
+}
+.placa2{
+  width: 200px;
+}
+.placa3{
+  width: 200px;
+}
+.placa4{
+  width: 200px;
+}
+.ram{
+  grid-column: 7/10;
+  text-align: center;
+}
+.ram img{
+  width: 200px;
+}
+.gabinetes{
+  grid-column: 10/13;
+  text-align: center;
+}
+.gabinetes img{
+  width: 200px;
+}
+.disco{
+  grid-column: 1/4;
+}
+.disco img{
+  width: 200px;
+}
+.tarjeta{
+  grid-column: 4/7;
+}
+.tarjeta img{
+  width: 200px;
+}
+.fuente{
+  grid-column: 7/10;
+}
+.fuente img{
+  width: 200px;
+}
+.monitor{
+  grid-column: 10/13;
+}
+.monitor img{
+  width: 200px;
+}
+.compra{
+
+
+  grid-column: 1/13;
+  text-align: center;
+  height: 130px;
+}
+
+
+
+.pie
+{
+
+  height: 130px;
+  background-color: #e2e1e1;
+  grid-column: 1/13;
+}
+
+.pietx
+{
+  padding-left: 0px;
+  padding-top: 10px;
+  text-align: center;
+  color:#8F8D8D ;
+  font-size: 12px;
+}
+
+@media(max-width:720px)
+{
+  .cabecera a
+  {
+
+    color: #EAEAEA;
+    text-align: center;
+    padding-left: 35px;
+    float: left;
+    padding-top: 10px;
+    text-decoration: none;
+  }
+
+  .logo
+  {
+    float: left;
+    padding-left: 150px;
+    padding-top: 5px;
+  }
+
+  .lupa
+  {
+    float: right;
+    padding-right: 10px;
+    padding-top: 7px;
+  }
+
+  .bolsa
+  {
+    float: right;
+    padding-right: 150px;
+    padding-top: 7px;
+  }
+  .procesador{
+    grid-column: 1/13;
+  }
+  .tii{
+    text-align: center;
+  }
+  .procesador label{
+    font-size: 20px;
+  }
+  .pro{
+    width: 200px;
+  }
+  .placamadre{
+    grid-column: 1/13;
+    text-align: center;
+  }
+  .ram{
+    grid-column: 1/13;
+    text-align: center;
+  }
+  .gabinetes{
+    grid-column: 1/13;
+    text-align: center;
+  }
+  .disco{
+    grid-column: 1/13;
+  }
+  .tarjeta{
+    grid-column: 1/13;
+  }
+  .fuente{
+    grid-column: 1/13;
+  }
+  .monitor{
+    grid-column: 1/13;
+  }
+
+
+
+}
