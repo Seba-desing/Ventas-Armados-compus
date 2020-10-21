@@ -18,7 +18,7 @@ from django.urls import path
 from proyecto1.views import bienvenida
 from proyecto1.views import pagina_principal
 from proyecto1.views import venta_compu, venta_compu2, venta_compu3, venta_compu4, venta_compu5
-
+from api.views import *
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -29,4 +29,5 @@ urlpatterns = [
     path('compu2/', venta_compu3),
     path('compu3/', venta_compu4),
     path('compu4/', venta_compu5),
+    path ('chale/', inicio),
 ]
