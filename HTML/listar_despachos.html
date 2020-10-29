@@ -1,0 +1,65 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.js"></script>
+
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static '/listado.css' %}">
+
+    <title>MiPC/despacho</title>
+</head>
+<body>
+    <div class="contenedor">
+        <header class="cabecera">
+          <img class="logo" src="{% static '/logo.png' %}" alt="">
+          <a href="/compu">inicio</a>
+          <a href="#">explorar</a>
+          <a href="#">soporte</a>
+  
+          <img class="bolsa" src="{% static '/bolsa.png' %}" alt="">
+          <img class="lupa" src="{% static '/lupa.png' %}" alt="">
+        </header>
+  
+        <div class="titulo">
+          <h1 >Listado de despachos</h1>
+        </div>
+        <table class="tablas">
+          <tr class="tablas">
+            <th class="tablas">nombre</th>
+            <th class="tablas">apellido</th>
+            <th class="tablas">email</th>
+            <th class="tablas">telefono</th>
+            <th class="tablas">direccion</th>
+            <th class="tablas">tipo de residencia</th>
+            <th class="tablas">ciudad</th>
+            <th class="tablas">Region</th>
+            <th class="tablas">zip</th>
+          </tr>
+          {% for i in desp %}
+          <tr class="tablas">
+            <td class="tablas">{{i.nombre}}</td>
+            <td class="tablas">{{i.apellido}}</td>
+            <td class="tablas">{{i.email}}</td>
+            <td class="tablas">{{i.telefono}}</td>
+            <td class="tablas">{{i.direccion}}</td>
+            <td class="tablas">{{i.tprs}}</td>
+            <td class="tablas">{{i.ciudad}}</td>
+            <td class="tablas">{{i.region}}</td>
+            <td class="tablas">{{i.zip}}</td>          
+          </tr>
+          {% endfor %}
+        </table>
+    </div>    
+
+    </div>
+    
+</body>
+</html>

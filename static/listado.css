@@ -1,0 +1,102 @@
+*
+{
+margin: 0px;
+padding: 0px;
+box-sizing: border-box;
+}
+
+.contenedor
+{
+display: grid;
+grid-template-columns: repeat(12,1fr);
+text-decoration: none;
+}
+
+.cabecera
+{
+background-color: #2C2B2B;
+height: 50px;
+grid-column: 1/13;
+color: white;
+text-decoration: none;
+font-weight: 100;
+}
+
+.cabecera a
+{
+
+color: #EAEAEA;
+text-align: center;
+padding-left: 140px;
+float: left;
+padding-top: 10px;
+text-decoration: none;
+}
+
+.logo
+{
+float: left;
+padding-left: 350px;
+padding-top: 5px;
+}
+
+.lupa
+{
+float: right;
+padding-right: 20px;
+padding-top: 7px;
+}
+
+.bolsa{
+
+    float: right;
+    padding-right: 350px;
+    padding-top: 7px;
+}
+.titulo{
+    grid-column: 1/13;
+    text-align: center;
+    margin: 20px;
+}
+.tablas
+{
+    grid-column: 1/13;
+border-style: solid;
+border-width:medium;
+
+}
+@media(max-width:720px)
+{
+.cabecera a
+{
+
+    color: #EAEAEA;
+    text-align: center;
+    padding-left: 35px;
+    float: left;
+    padding-top: 10px;
+    text-decoration: none;
+}
+
+
+.logo
+{
+    float: left;
+    padding-left: 150px;
+    padding-top: 5px;
+}
+
+.lupa
+{
+    float: right;
+    padding-right: 10px;
+    padding-top: 7px;
+}
+
+.bolsa
+{
+    float: right;
+    padding-right: 150px;
+    padding-top: 7px;
+}
+}
