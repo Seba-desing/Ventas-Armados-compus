@@ -17,6 +17,8 @@ from django.contrib import admin
 from django.urls import path
 from proyecto1.views import *
 from api.views import *
+from django.conf import settings
+from django.conf.urls.static import static
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -27,4 +29,8 @@ urlpatterns = [
     path('compu4/', venta_compu5),
     path('formulario/', Despacho),
     path('listar_despacho/',listar_despacho),
+    path('modificar/<id>/', modificar),
+    path('eliminar/<id>/', eliminar),
+    path('imagen/', persona),
 ]
+urlpatterns +=  static(settings.MEDIA_URL,document_root = settings.MEDIA_ROOT)

@@ -31,29 +31,36 @@
         <div class="titulo">
           <h1 >Listado de despachos</h1>
         </div>
-        <table class="tablas">
-          <tr class="tablas">
-            <th class="tablas">nombre</th>
-            <th class="tablas">apellido</th>
-            <th class="tablas">email</th>
-            <th class="tablas">telefono</th>
-            <th class="tablas">direccion</th>
-            <th class="tablas">tipo de residencia</th>
-            <th class="tablas">ciudad</th>
-            <th class="tablas">Region</th>
-            <th class="tablas">zip</th>
+        <table class="table">
+          <tr >
+            <th class="col">id</th>
+            <th class="col">nombre</th>
+            <th class="col">apellido</th>
+            <th class="col">email</th>
+            <th class="col">telefono</th>
+            <th class="col">direccion</th>
+            <th class="col">tipo de residencia</th>
+            <th class="col">ciudad</th>
+            <th class="col">Region</th>
+            <th class="col">zip</th>
+            <th> opciones </th>
           </tr>
           {% for i in desp %}
-          <tr class="tablas">
-            <td class="tablas">{{i.nombre}}</td>
-            <td class="tablas">{{i.apellido}}</td>
-            <td class="tablas">{{i.email}}</td>
-            <td class="tablas">{{i.telefono}}</td>
-            <td class="tablas">{{i.direccion}}</td>
-            <td class="tablas">{{i.tprs}}</td>
-            <td class="tablas">{{i.ciudad}}</td>
-            <td class="tablas">{{i.region}}</td>
-            <td class="tablas">{{i.zip}}</td>          
+          <tr class="">
+            <th scope="row">{{i.id}}</th>
+            <td class="">{{i.nombre}}</td>
+            <td class="">{{i.apellido}}</td>
+            <td class="">{{i.email}}</td>
+            <td class="">{{i.telefono}}</td>
+            <td class="">{{i.direccion}}</td>
+            <td class="">{{i.tprs}}</td>
+            <td class="">{{i.ciudad}}</td>
+            <td class="">{{i.region}}</td>
+            <td class="">{{i.zip}}</td>  
+            <td> 
+              <a href="/modificar/{{i.id}}">Modificar</a>
+              <a href="/eliminar/{{i.id}}">Eliminar</a>
+            </td>        
           </tr>
           {% endfor %}
         </table>

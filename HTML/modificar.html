@@ -1,0 +1,59 @@
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static '/modificar.css' %}">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <title>Document</title>
+</head>
+<body>
+    <div class="content">
+
+        <div class="nav">
+            
+            <ul>
+                <li><img id="logo" src="{% static '/logo.png' %}" alt=""></li>
+                <li><a href="/compu">Inicio</a></li>
+                <li><a href="#">Explorar</a></li>
+                <li><a href="#">Soporte</a></li>
+                <li><a href="/listar_despacho">Listar</a></li>
+                <li><img src="{% static '/lupa.png' %}" alt=""></li>
+                <li><img src="{% static '/bolsa.png' %}" alt=""></li>
+                
+            </ul>
+            <div class="dropdown">
+                <button class="dropdown-btn"><img src="{% static '/menu.png' %}" alt=""></button>
+                <div class="dropdown-content">
+                    <a href="/inicio">Inicio</a>
+                    <a href="#">Explorar</a>
+                    <a href="#">Soporte</a>
+                    <a href="/armar">Armar</a>
+                    <a href="/comprar">Comprar</a>
+
+                </div>
+            </div>
+        </div>
+
+       
+        <div class="formulario">
+            <form  action="" method="POST" >
+                {% csrf_token %}
+                <table class="table">
+                {{form.as_table}}
+                </table>
+                <button type="submit" name="button" class="btn btn-primary" >Modificar</button>
+                {{mensaje}}
+            </form>
+         </div>
+       
+
+        
+
+
+    </div>
+</body>
+</html>
